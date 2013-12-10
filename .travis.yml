@@ -8,3 +8,13 @@ after_success:
 - node lib/run.js catalog.csv
 env:
   global:
+
+notifications:
+  hipchat:
+    rooms:
+      - secure: OyYihFKiR7xbI78D+NH8fPp0St3TPgSIDSTD8pgNAvMRGbwJyrpbNxDHrtHNONQ7FDD7xNUcCq7fCMVJOq6Esy7dv1ImiM0MDGM3MHv7OD6fpUCaUwnn5BAJTEPvqhuSOKPw9vrHc2pvFc0htnc1qnxPZxkJOyGvvQ75qlofWj0=
+    template:
+      - '%{repository}#%{build_number} (%{author}): %{message} (<a href="%{build_url}">Details</a> <a href="%{compare_url}">Compare</a>)'
+    format: html
+    on_success: change
+    on_failure: always
