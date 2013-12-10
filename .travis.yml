@@ -8,9 +8,9 @@ after_success:
 - node lib/run.js catalog.csv
 env:
   global:
-  - secure: Audp6SygB5kCBGNrx6zMSWvMJS2AZxyYn97jeSeKEiYcpDPz+n+LpS2Yu+Qy+raGNHVEsxZsQU304mpDTkMFOGrF7fjZWZeLrrqNqZ3bAP9yZxj39VzLjJCCQzu2PGFRyQTXhvUoLgbbpE+hxGskh+PxWORWQKaWAT7c2VnSZgQ=
-  - secure: P2iAMFfnm2ImhedsoUs2tabkkbRmazxeuELqKBIMfMMjVPE/tUSrMMSTp259HZxPLTn9jyQ2l1oxrPl5d7GgMQeKSGMhbKpnMCyJ5WF4lxUR/VxzELu3pe1QzQuYSyzpXsqibpzzx9cohGsM7m7PtAz/7NfBi/MgjNuYuUOa9Ic=
-  - secure: GjeIFv4D/FMT7I96sKQY/857gzN8q8ZMCMxiqILHu80JZqmpN5E+wWJbhicIhmyPU47lK3TJIqOSKljHHym3T4bWGhsCcXkT+p7LrfYQFQhIt5t8SxXtVGWgn9m2pBB/sGil8pYludfp7coT9guMFTqUP8q0nYAVVFdFP3cYLI8=
+  - secure: LpZzXppns3Mgwq/f3ZB1TnDDAIA88iRgs5R8Go2mIyjQInqjskSDRjq3f7TZusnUGMshpW2eYvZN6qZY/7WoBe3tQp7gSuuknQaR3UTdWVUsMDcHaLO3YqkjoUeLywkEpUmKUSSnUfdqhLRvqC/c9oDB09qgLc0pfSjRbMWI7MU=
+  - secure: UhbAdApd0AkPh93xYq+2VP4wE+uS7JmgBJOJiYUMbapVlroqC7Fn0YbuuRsK8A+5O03q+q6ZSkuHdyulVlaV86k30xqx36lRbxpfKNGpD/DWPGdSDRVkV5V8kWrALqDp7LC7l1PqELyKvazvhyRZ1yU5cC8n8buOiajY5/74/pQ=
+  - secure: XKurzXU3IHF149/7ew0nv09Khd25dj9L9QxCGDgaTlvHdxRXxEydum85fQXEL0oK0zV0f3YlCmMWxW9TgLfG4B1gn9Op8rdTm2/zt7qa5bRBCvL6WF/53Up2IVJHrNIEm5IOdKG0HxlRIyAlm5pyV2W1moTQzR6M1/9R1UW67gU=
 notifications:
   hipchat:
     rooms:
