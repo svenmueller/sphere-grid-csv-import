@@ -8,13 +8,16 @@ after_success:
 - node lib/run.js catalog.csv
 env:
   global:
-
+  - secure: Audp6SygB5kCBGNrx6zMSWvMJS2AZxyYn97jeSeKEiYcpDPz+n+LpS2Yu+Qy+raGNHVEsxZsQU304mpDTkMFOGrF7fjZWZeLrrqNqZ3bAP9yZxj39VzLjJCCQzu2PGFRyQTXhvUoLgbbpE+hxGskh+PxWORWQKaWAT7c2VnSZgQ=
+  - secure: P2iAMFfnm2ImhedsoUs2tabkkbRmazxeuELqKBIMfMMjVPE/tUSrMMSTp259HZxPLTn9jyQ2l1oxrPl5d7GgMQeKSGMhbKpnMCyJ5WF4lxUR/VxzELu3pe1QzQuYSyzpXsqibpzzx9cohGsM7m7PtAz/7NfBi/MgjNuYuUOa9Ic=
+  - secure: GjeIFv4D/FMT7I96sKQY/857gzN8q8ZMCMxiqILHu80JZqmpN5E+wWJbhicIhmyPU47lK3TJIqOSKljHHym3T4bWGhsCcXkT+p7LrfYQFQhIt5t8SxXtVGWgn9m2pBB/sGil8pYludfp7coT9guMFTqUP8q0nYAVVFdFP3cYLI8=
 notifications:
   hipchat:
     rooms:
-      - secure: OyYihFKiR7xbI78D+NH8fPp0St3TPgSIDSTD8pgNAvMRGbwJyrpbNxDHrtHNONQ7FDD7xNUcCq7fCMVJOq6Esy7dv1ImiM0MDGM3MHv7OD6fpUCaUwnn5BAJTEPvqhuSOKPw9vrHc2pvFc0htnc1qnxPZxkJOyGvvQ75qlofWj0=
+      secure: f5wy9rYdmRrN7Q2Z6Yj/mourK2g+uXjHaj0TR2a9G7/cOalrz98InhKNUM10uEZxEwTlO5vzwJDNj3OMhBxN46BUpr6JCjNpoIKzL431kgozPtAdR17JwAQC4aBFuueM/lTkfR1KuD4bqK1INHMTFitHXSSGoAIPOrXls+BGG1A=
     template:
-      - '%{repository}#%{build_number} (%{author}): %{message} (<a href="%{build_url}">Details</a> <a href="%{compare_url}">Compare</a>)'
+    - ! '%{repository}#%{build_number} (%{author}): %{message} (<a href="%{build_url}">Details</a>
+      <a href="%{compare_url}">Compare</a>)'
     format: html
     on_success: change
     on_failure: always
