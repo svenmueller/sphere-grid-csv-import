@@ -1,0 +1,45 @@
+{
+    "title": "sphere-grid-csv-import",
+    "description": "Creates or updates your SPHERE.IO catalog from GRID csv.",
+    "url" : "http://www.commercetools.com",
+    "credentials": {
+        "fields": {
+            "projectKey": {
+                "viewClass": "TextFieldView",
+                "label": "Project Key",
+                "required": true,
+                "placeholder": "Paste your project key"
+            },
+            "clientId": {
+                "viewClass": "TextFieldView",
+                "label": "Client Id",
+                "required": true,
+                "placeholder": "Paste your Client Id"
+            },
+            "clientSecret": {
+                "viewClass": "TextFieldView",
+                "label": "Client Secret",
+                "required": true,
+                "placeholder": "Paste your Client Secret"
+            }
+        }
+    },
+    "actions": {
+        "services": {
+            "main": "elasticio.js",
+            "title": "GRID CSV Import",
+            "metadata": {
+                "in": {
+                    "type" : "product",
+                    "properties" : {
+                        "SKU" : {
+                            "title" : "SKU of product",
+                            "type" : "string",
+                            "required": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

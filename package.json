@@ -1,0 +1,49 @@
+{
+  "name": "sphere-grid-csv-import",
+  "description": "Import your GRID catalog data into SPHERE.IO's inventory from  GRID CSV.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/svenmueller/sphere-grid-csv-import",
+  "private": true,
+  "author": {
+    "name": "Sven Mueller",
+    "email": "sven.mueller@commercetools.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svenmueller/sphere-grid-csv-import.git"
+  },
+  "bugs": {
+    "url": "https://github.com/svenmueller/sphere-grid-csv-import/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/svenmueller/sphere-grid-csv-import/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "main.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "sphere-node-connect": "~0.2.0",
+    "sphere-node-sync": "~0.2.2",
+    "underscore": "~1.5.2",
+    "progress": "~1.1.2",
+    "q": "~0.9.7"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.5.0",
+    "grunt-coffeelint": "~0.0.7",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "jasmine-node": "~1.11.0"
+  },
+  "keywords": []
+}
